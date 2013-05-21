@@ -11,6 +11,7 @@ def sqlite?
   @using_sqlite ||= defined?(ActiveRecord::ConnectionAdapters::SQLite3Adapter) && ActiveRecord::Base.connection.class == ActiveRecord::ConnectionAdapters::SQLite3Adapter
 end
 
+require 'pathname'
 # Load the rails application
 require Pathname.new(__FILE__).dirname.expand_path.join('application')
 
