@@ -54,6 +54,14 @@ Diaspora::Application.configure do
   end
   
   config.threadsafe!
+  # config.dependency_loading = true if $rails_rake_task
+
+  require 'rack/rewrite'
+  config.middleware.insert_before(1, Rack::Rewrite) do
+    r301 '/apple-touch-icon-precomposed.png', 'https://s3.amazonaws.com/kickfinisher-prod/assets/bk-icon.png'            
+    r301 '/apple-touch-icon.png', 'https://s3.amazonaws.com/kickfinisher-prod/assets/bk-icon.png'            
+  end
+
 end
 
 GC.enable_stats if GC.respond_to?(:enable_stats)

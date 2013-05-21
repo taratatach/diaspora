@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+ruby '1.9.3'
 # Appserver
 
 gem 'unicorn', '4.6.2', :require => false

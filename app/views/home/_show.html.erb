@@ -1,0 +1,106 @@
+<% content_for :head do %>
+    <meta property="og:title" content="Diaspora*" />
+    <meta property="og:description" content="The Community-run, Multi-Installment Social-network" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://joindiaspora.com" />
+    <meta property="og:image" content="https://joindiaspora.com/icon_128.gif" />
+    <meta property="fb:app_id" content="120373411325347" />
+<% end %>
+
+<div id="landing">
+  <div id="landing_banner">
+    <div class="container">
+      <span class="landing-banner-right">
+        <a href="http://blog.diasporafoundation.org">Blog</a>
+        <a href="/users/sign_in" class='login-button'>Login</a>
+      </span>
+
+      <%= image_tag "landing/title.png", :class => "landing-logo" %>
+      <h2>The Community-run, Distributed Social-network</h2>
+      <h4>joindiaspora.com is one of <a href='http://podupti.me'>many installations</a> of <a href='http://github.com/diaspora/diaspora'> Diaspora*</a></h4>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="content">
+        <div id="getting-started">
+            <div class="row">
+              <div id="sign_up" class="span12">
+                  <%= form_for(User.new, :validate => true, :url => registration_path('user'), :html => {:class => "form-horizontal block-form", :autocomplete => "off"}) do |f| %>
+                      <fieldset>
+                        <div class="control-group">
+                          <label class="control-label" for="user_email">
+                              <%= t('registrations.new.email') %>
+                          </label>
+
+                          <div class="controls">
+                              <%= f.email_field :email, :placeholder => "luke@hoth.net", :title => t('registrations.new.enter_email'), :required => true %>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="user_username">
+                              <%= t('registrations.new.username') %>
+                            </label>
+
+                            <div class="controls">
+                              <%= f.text_field :username, :placeholder => "jedi_guy", :title => t('registrations.new.enter_username'), :required => true, :pattern => "[A-Za-z0-9_]+" %>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                          <label class="control-label" for="user_password">
+                              <%= t('registrations.new.password') %>
+                          </label>
+
+                          <div class="controls">
+                              <%= f.password_field :password, :placeholder => "••••••••", :title => t('registrations.new.enter_password'), :required => true, :pattern => "......+" %>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <%= f.submit t('registrations.new.sign_up'), :class => "new-btn" %>
+                  <% end %>
+              </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+
+            <div id="steps" class="row">
+                <div class="span4">
+                    <%= image_tag('landing/github.png') %>
+
+                    <h2>Open Source</h2>
+                    <p>
+                      Our software is completely free, so grab the code and host it wherever you want!  Diaspora is a community effort - <%= link_to("contribute on Github", "https://github.com/diaspora/diaspora") %></p>
+                    </p>
+                </div>
+
+                <div class="span4">
+                    <%= image_tag('landing/lock.png') %>
+
+                    <h2>Own your data</h2>
+                    <p>Connecting socially is human nature.  You shouldn't have to trade away your personal information to participate.
+                      <a href='http://diasporafoundation.org'> Learn More at Diaspora Foundation</a></p>
+                </div>
+
+                <div class="span4">
+                    <%= image_tag('landing/world.png') %>
+
+                    <h2>Creative Community</h2>
+                    <p>Meet people from all over the world who love the Internet and want to see it free as much as you do.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+  <div id="footer">
+    ‌© DIASPORA, INC. 2012
+  </div>
+</div>
