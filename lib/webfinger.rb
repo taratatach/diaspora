@@ -1,6 +1,7 @@
 #   Copyright (c) 2010-2012, Diaspora Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
+require 'timeout'
 
 class Webfinger
   attr_accessor :host_meta_xrd, :webfinger_profile_xrd,
@@ -14,8 +15,10 @@ class Webfinger
 
 
   def fetch
-    return person if existing_person_with_profile?
-    create_or_update_person_from_webfinger_profile!
+     Timeout::timeout(5) {
+      return person if existing_person_with_profile?
+      create_or_update_person_from_webfinger_profile!
+    }
   end
 
   def self.in_background(account, opts={})
