@@ -40,4 +40,3 @@ heroku maintenance:off -a diaspora-production
 
 
 kill heroku old cron jobs
-
