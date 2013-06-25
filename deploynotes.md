@@ -30,9 +30,6 @@ heroku config:add SIDEKIQ_CONCURRENCY=2  SIDEKIQ_RETRY=3 -a diaspora-production
 git push heroku joindiaspora:master -f
 5. heroku run rake db:migrate -a diaspora-production
 
-
-
-
 heroku run rake db:migrate
 heroku run 'rails runner "AssetSync.sync"' && heroku restart && heroku maintenance:off -a diaspora-production
 
