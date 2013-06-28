@@ -1,0 +1,109 @@
+/* ---- Fonts ---- */
+@font-face {
+	font-family: "Roboto Regular";
+	src: url("Roboto-Regular.ttf");
+}
+
+
+body {
+	background: url("hatched-medium.jpg") fixed #888888;
+	margin-bottom: 0px;
+}
+
+#content {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 5%;
+	width: 90%;
+	
+	text-align: justify;
+	font-family: sans-serif;
+	background: white;
+	
+	border: solid #CCC 1px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#content-frame, #interaction-frame {
+	position: absolute;
+	bottom: 0px;
+	top: 39px;
+	overflow: auto;
+	padding: 0px 2%;
+	width: 46%;
+}
+
+#content-frame {
+	left: 0px;
+	border-right: 1px solid #EEEEEE;
+}
+
+#interaction-frame {
+	right: 0px;
+}
+
+#content-header, #interaction-header {
+	margin-top: 12px;
+	font-family: "Roboto Regular";
+	font-size: small;
+    color: #888888;
+}
+.center {
+	text-align: center;
+}
+.center img {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+#content-header {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#profile-picture {
+	float: left;
+	margin-right: 5px;
+}
+
+#interaction-box {
+	float: right;
+}
+
+#interaction-box p { margin-top: 0px; }
+
+#interaction-header { margin-bottom: 12px;}
+.author {
+	font-family: "Roboto Regular";
+}
+
+
+#like_img, #reshare_img, #comment_img  {
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#like_img {
+	background-image: url('heart_mobile_grey.png');
+}
+
+#reshare_img {
+	background-image: url('reshare_mobile.png');
+}
+
+#comment_img {
+	background-image: url('comment_mobile_grey.png');
+}
+
+#like_img:hover {
+	background-image: url('heart_mobile_red.png');
+}
+
+#reshare_img:hover {
+	background-image: url('reshare_mobile_active.png');
+}
+
+#comment_img:hover {
+	background-image: url('comment_mobile_blue.png');
+}

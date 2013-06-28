@@ -1,0 +1,5 @@
+
+#content-frame, #interaction-frame {
+	position: absolute;
+	bottom: auto;
+}

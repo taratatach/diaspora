@@ -1,0 +1,111 @@
+/* ---- Fonts ---- */
+@font-face {
+	font-family: "Roboto Regular";
+	src: url("Roboto-Regular.ttf");
+}
+
+body {
+	background: url("hatched-medium.jpg") fixed #888888;
+	margin-bottom: 0px;
+}
+
+#content {
+	width: 80%;
+	margin: auto;
+	margin-top: 39px;
+	padding: 12px 25px;
+	
+	text-align: justify;
+	font-family: sans-serif;
+	background: white;
+	
+	border: solid #CCC 1px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+	text-align: center;
+}
+.center img {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+#content-frame {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#content-header, #interaction-header {
+	margin-top: 12px;
+	font-family: "Roboto Regular";
+	font-size: small;
+    color: #888888;
+}
+
+#content-header {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#profile-picture {
+	float: left;
+	margin-right: 5px;
+}
+
+#interaction-box {
+	float: right;
+}
+
+#interaction-box p { margin-top: 0px; }
+
+#interaction-frame {
+	margin-top: 42px;
+}
+
+#interaction-header { margin-bottom: 12px;}
+.author {
+	font-family: "Roboto Regular";
+}
+
+#like_img, #reshare_img, #comment_img  {
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#like_img {
+	background-image: url('heart_mobile_grey.png');
+}
+
+#reshare_img {
+	background-image: url('reshare_mobile.png');
+}
+
+#comment_img {
+	background-image: url('comment_mobile_grey.png');
+}
+
+#like_img:hover {
+	background-image: url('heart_mobile_red.png');
+}
+
+#reshare_img:hover {
+	background-image: url('reshare_mobile_active.png');
+}
+
+#comment_img:hover {
+	background-image: url('comment_mobile_blue.png');
+}
+
+.back-to-top {
+    background-color: #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+	float:right;
+    font-size: 3em;
+	margin: 0px 12px;
+    padding: 0 11px 0 12px;
+}
+
+.back-to-top:hover {
+    background-color: #AAAAAA;
+}

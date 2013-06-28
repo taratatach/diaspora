@@ -1,0 +1,166 @@
+header {
+	font-family: "Roboto Regular";
+    background-color: #282323;
+    background-image: url("header-bg.png");
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    color: #CCCCCC;
+    height: 26px;
+    left: 0;
+    padding: 6px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+header .header-nav {
+    float: left;
+    font-weight: bold;
+    height: 100%;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+header .header-nav > span {
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    display: inline-block;
+    height: 100%;
+    margin-left: -4px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 950px;
+}
+
+header .header-nav a {
+    padding: 0 10px;
+    width: 100%;
+}
+
+header a {
+    color: #939393;
+}
+a {
+    color: #3F8FBA;
+    text-decoration: none;
+}
+
+.diaspora_header_logo {
+    float: left;
+    margin-top: -6px;
+}
+
+a img {
+    border: medium none;
+}
+
+/* --------------------- comment style -----------------------------*/
+
+.comment {
+    border-bottom: 1px dotted #AAAAAA;
+	margin-bottom: 5px;
+}
+
+.media {
+	padding: 5px;
+}
+
+.media .img {
+    float: left;
+    margin-right: 10px;
+}
+
+.media .img img {
+    display: block;
+}
+
+comment .avatar {
+    height: 30px;
+    width: 30px;
+}
+.stream_element img {
+    max-width: 100%;
+}
+.avatar {
+    background-color: #EEEEEE;
+    height: 50px;
+    overflow: hidden;
+    width: 50px;
+}
+.small {
+    font-size: 0.8em;
+    line-height: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+.media, .bd {
+    overflow: hidden;
+}
+
+.controls {
+    float: right;
+}
+
+.info {
+    font-size: smaller;
+    color: #AAAAAA;
+}
+
+input[type=submit] {
+    padding: 4px 9px;
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%);
+    background-image: -webkit-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%);
+    background-image: -o-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%);
+    background-image: -ms-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%);
+    border: 1px solid #AAAAAA;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px #CFCFCF;
+    color: #505050;
+    cursor: pointer;
+    min-height: 10px;
+    min-width: 90px;
+    white-space: nowrap;
+}
+
+input[type=submit]:hover {
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #B7B7B7 100%);
+    background-image: -webkit-linear-gradient(center top , #FFFFFF 0%, #B7B7B7 100%);
+    background-image: -o-linear-gradient(center top , #FFFFFF 0%, #B7B7B7 100%);
+    background-image: -ms-linear-gradient(center top , #FFFFFF 0%, #B7B7B7 100%);
+    border: 1px solid #848484;
+}
+
+
+element.style {
+    overflow-y: hidden;
+    resize: none;
+}
+form.new_comment textarea {
+    font-size: 12px;
+    height: 21px;
+    width: 364px;
+}
+
+input:not([type="submit"]):not([type="reset"]):not([type="hidden"]):not(.as-input), textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    color: #000000;
+    display: block;
+    font-family: "Arial","Helvetica",sans-serif;
+    font-size: 14px;
+    height: auto;
+    margin-top: 1px;
+    padding: 0.3em;
+}
+
+.submit_button {
+	text-align: right; 
+    width: 364px; 
+    padding: 0.3em;
+	margin-left: 0.3em;
+}
+	
