@@ -26,7 +26,7 @@ $(document).ready(function(){
   };
 
   /* Drawer menu */
-  $('#menu_badge').click(function(evt){
+  $('#menu_badge').bind("tap click", function(evt){
     evt.preventDefault();
     toggleDrawerMenu();
   });
