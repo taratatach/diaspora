@@ -13,6 +13,7 @@
 * Refactor ConversationsController#create, move more stuff to User model [#4551](https://github.com/diaspora/diaspora/pull/4551)
 * Refactor MessagesController#create, move stuff to User model [#4556](https://github.com/diaspora/diaspora/pull/4556)
 * Reorder the left bar side menu to put the stream first [#4569](https://github.com/diaspora/diaspora/pull/4569)
+* Refactor mobile publisher
 
 ## Bug fixes
 * Highlight down arrow at the user menu on hover [#4441](https://github.com/diaspora/diaspora/pull/4441)
@@ -35,6 +36,9 @@
 * Force comments sort order in mobile spv [#4578](https://github.com/diaspora/diaspora/pull/4578)
 * Fix getting started page for mobile [#4536](https://github.com/diaspora/diaspora/pull/4536)
 * Refactor mobile header, fix [#4579](https://github.com/diaspora/diaspora/issues/4579)
+* Fix profile picture hidden behind first post on mobile profile view
+* Fix "more picture" indication (+n) on mobile by adding a link on the indication
+* Improve mobile notification view
 
 ## Features
 * Add oEmbed content to the mobile view [#4343](https://github.com/diaspora/diaspora/pull/4353)
@@ -44,6 +48,7 @@
 * Highlight current stream in left sidebar [#4445](https://github.com/diaspora/diaspora/pull/4445)
 * Added ignore user icon [#4417](https://github.com/diaspora/diaspora/pull/4417)
 * Improve the management of the contacts visibility settings in an aspect [#4567](https://github.com/diaspora/diaspora/pull/4567)
+* Add new icons in mobile header
 
 
 # 0.2.0.0

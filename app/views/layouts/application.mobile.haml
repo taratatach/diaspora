@@ -72,11 +72,10 @@
             = link_to(image_tag('icons/menu.png', height: 30, width: 30, class: 'menu'), "#", id: "menu_badge", class: "badge")
 
       #main.container{:role => "main"}
-        .row
-          - if current_page?(:activity_stream)
-            %h3
-              = t('streams.activity.title')
-          = yield
+        - if current_page?(:activity_stream)
+          %h3
+            = t('streams.activity.title')
+        = yield
 
       - if user_signed_in?
         = render :partial =>'shared/footer'
